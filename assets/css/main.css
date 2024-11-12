@@ -3319,7 +3319,7 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 68em;
+		max-width: 50em;
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
@@ -3363,32 +3363,24 @@ input, select, textarea {
     /* Remove min-height and max-width to allow the box to grow */
 	min-height: 2em;
 }
-.crop-left-square {
-    width: 100%; /* Set the desired width */
-    height: 18em; /* Set the desired height */
-    object-fit: cover; /* Ensures the image covers the entire area */
-    object-position: left; /* Crops the image from the left side */
-}
-
-.crop-top-square {
-    width: 100%; /* Set the desired width */
-    height: 18em; /* Set the desired height */
-    object-fit: cover; /* Ensures the image covers the entire area */
-    object-position: top; /* Crops the image from the top side */
-}
-
-.crop-right-square {
-    width: 100%; /* Set the desired width */
-    height: 18em; /* Set the desired height */
-    object-fit: cover; /* Ensures the image covers the entire area */
-    object-position: right; /* Crops the image from the right side */
-}
-
 
 .crop-square {
-    width: 100%; /* Set the desired width */
-    height: 18em; /* Set the desired height */
-    object-fit: cover; /* Ensures the image covers the entire area */
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+}
+
+/* Position modifiers */
+.crop-left {
+    object-position: left;
+}
+
+.crop-top {
+    object-position: top;
+}
+
+.crop-right {
+    object-position: right;
 }
 
 .tiles .style1 a h2 {
